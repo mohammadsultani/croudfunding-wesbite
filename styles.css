@@ -1,0 +1,321 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+/***************************** General styles *******************************/
+.first-section {
+  margin-bottom: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  top: -60px;
+}
+.first-section-content {
+  /* Width is responsive */
+  border-color: black;
+  border-style: dashed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.mastercraft-image {
+  position: absolute;
+  top: -30px;
+}
+.mastercraft-text {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.text-one {
+  text-align: center;
+}
+.second-section {
+  /* Width is responsive */
+  border-color: black;
+  border-style: dashed;
+  margin: auto;
+  padding: 20px;
+  margin-top: -30px;
+}
+.second-section > .first-row {
+  display: flex;
+}
+.second-section .bold-text {
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 0px;
+}
+.second-section .light-text {
+  margin-top: 5px;
+}
+.progress-bar {
+  margin: auto;
+  margin-top: 5px;
+  width: 80%;
+  height: 15px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 48%);
+}
+.progress {
+  width: 70%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: hsl(176, 50%, 47%);
+}
+/* Third Section */
+.third-section {
+  margin: auto;
+  margin-top: 30px;
+  border: 2px black dashed;
+  padding: 20px;
+}
+.third-section > .block {
+  border: 1px hsl(0, 0%, 80%) solid;
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+}
+.third-section .bamboo {
+  margin: 0px;
+  font-size: larger;
+  font-weight: 600;
+}
+.third-section .pledge {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: large;
+  font-weight: 500;
+  color: hsl(176, 50%, 47%);
+}
+.third-section .select-reward {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 30px;
+  color: white;
+  border-color: white;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.third-row p {
+  display: flex;
+  align-items: center;
+}
+#digits {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.select-reward{
+  font-size: 16px;
+  font-weight: normal;
+}
+.second {
+  margin-top: 20px;
+}
+
+/******************************* Mobile View ********************************/
+.first-div {
+  position: relative;
+  height: auto;
+}
+@media only screen and (max-width: 727px) {
+  #desktop-hero-image {
+    display: none;
+  }
+  #mobile-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .navbar {
+    color: white;
+    position: absolute;
+    top: 10px;
+    width: 90%;
+    right: 5%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  .navbar-right-desktop {
+    display: none;
+  }
+  .navbar-item-left {
+    font-size: 20px;
+  }
+  .first-section-content {
+    width: 260px;
+  }
+  .second-section,
+  .third-section {
+    width: 260px;
+  }
+  .second-section .first-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookmark {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+  }
+  .project-button {
+    background-color: hsl(176, 50%, 47%);
+    padding: 10px 30px 10px 30px;
+    color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .bookmark-button {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .bookmark-button > .bookmark-text {
+    display: none;
+  }
+  .second-section .first,
+  .second,
+  .third {
+    width: fit-content;
+    text-align: center;
+  }
+  .second-section .first,
+  .second {
+    border-bottom: 2px hsl(0, 0%, 48%) solid;
+  }
+  .third-section .first-row,
+  .third-section .third-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .third-row .select-reward {
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/*********************************** Desktop View **********************************/
+@media only screen and (min-width: 728px) {
+  #desktop-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+  }
+  #mobile-hero-image,
+  .hamburger-image {
+    display: none;
+  }
+  .navbar {
+    position: absolute;
+    width: 80%;
+    top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-right-desktop {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-left-desktop {
+    width: 30%;
+  }
+  .navbar-item-right {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  .navbar-item-left {
+    color: white;
+    font-size: 24px;
+  }
+  .first-section-content,
+  .second-section,
+  .third-section {
+    width: 60%;
+  }
+  .bookmark {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+  }
+  .project-button {
+    background-color: hsl(176, 50%, 47%);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .bookmark-button {
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  .bookmark-button > .bookmark-icon {
+    margin-right: 10px;
+  }
+  .bookmark-button > .bookmark-text {
+    display: block;
+  }
+  .second-section .first,
+  .second-section .second,
+  .second-section .third {
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-section .first,
+  .second-section .second {
+    border-right: 3px hsl(0, 0%, 48%) solid;
+  }
+  .third-section .first-row,
+  .third-section .third-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
